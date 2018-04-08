@@ -9,7 +9,7 @@
  */
 
 // model specific error messages
-$lang['error_val_empty_or_already_exists'] = '%1s jest psuty lub już istnieje.';
+$lang['error_val_empty_or_already_exists'] = '%1s jest pusty lub już istnieje.';
 $lang['error_in_readonly_mode'] = '%1s jest tylko do odczytu i nie można zmodyfikować danych.';
 
 // standard model errors

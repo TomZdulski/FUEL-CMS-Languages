@@ -298,10 +298,12 @@ $lang['delete_item_message'] = 'Zamierzasz skasować pozycję:';
 $lang['replace_item_message'] = 'Wybierz rekord z poniższej listy, który chcesz zastąpić. Dane zostaną przeniesione do wskazanego rekordu a źródłowy rekord zostanie usunięty.';
 
 // command line
+// no polish charaters in CLI section, ANSI only for console beter(no strange-chars) look (some consoles have only ANSI characters set)
+
 //$lang['module_install'] = "The '%1s' module has successfully been installed.\n";
-$lang['module_install'] = "Moduł '%1s' został poprawnie zainstalowany.\n";
+$lang['module_install'] = "Modul '%1s' zostal poprawnie zainstalowany.\n";
 //$lang['module_install_error'] = "There was an error installing the '%1s' module.\n";
-$lang['module_install_error'] = "Wystąpił błąd podczas instalacji modułu '%1s'.\n";
+$lang['module_install_error'] = "Wystapil blad podczas instalacji modulu '%1s'.\n";
 
 //$msg = "The module %1s has been uninstalled in FUEL.\n\n";
 //$msg .= "However, removing a module from GIT is a little more work that we haven't automated yet. However, the below steps should help.\n\n";
@@ -309,20 +311,20 @@ $lang['module_install_error'] = "Wystąpił błąd podczas instalacji modułu '%
 //$msg .= "2. Delete the relevant section from .git/config.\n";
 //$msg .= "3. Run git rm --cached %2s (no trailing slash).\n";
 //$msg .= "4. Commit and delete the now untracked submodule files.\n";
-$msg = "Moduł %1s został odinstalowany z systemu FUEL.\n\n";
-$msg .= "Jednak usunięcie modułu z GIT-a wymaga troszkę więcej pracy i nie zostało jeszcze zautomatyzowane. Poniższe kroki powinny w tym pomóc.\n\n";
-$msg .= "1. Usuń odpowiednią sekcję z pliku .gitmodules.\n";
-$msg .= "2. Usuń odpowiednią sekcję z pliku .git/config.\n";
-$msg .= "3. Uruchom: git rm --cached %2s (bez końcowego znaku slash).\n";
-$msg .= "4. 'Commit' i 'Delete' nieśledzone teraz pliki sub-modułu.\n";
+$msg = "Modul %1s zostal odinstalowany z systemu FUEL.\n\n";
+$msg .= "Jednak usuniecie modulu z GIT-a wymaga troszke wiecej pracy i nie zostało jeszcze zautomatyzowane. Ponizsze kroki powinny w tym pomoc.\n\n";
+$msg .= "1. Usun odpowiednia sekcje z pliku .gitmodules.\n";
+$msg .= "2. Usun odpowiednia sekcje z pliku .git/config.\n";
+$msg .= "3. Uruchom: git rm --cached %2s (bez koncowego znaku slash).\n";
+$msg .= "4. 'Commit' i 'Delete' niesledzone teraz pliki sub-modulu.\n";
 $lang['module_uninstall'] = $msg;
 
 //$lang['module_update'] = "The module %1s has been updated in FUEL.\n";
-$lang['module_update'] = "Moduł %1s został uaktualniony w systemie FUEL.\n";
+$lang['module_update'] = "Modul %1s zostal uaktualniony w systemie FUEL.\n";
 
 // build
 //$lang['module_build_asset'] = "%1s optimized and ouput to %2s\n";
-$lang['module_build_asset'] = "%1s został zoptymalizowany i wysłany do %2s\n";
+$lang['module_build_asset'] = "%1s zostal zoptymalizowany i wyslany do %2s\n";
 
 /*
 |--------------------------------------------------------------------------
@@ -441,7 +443,7 @@ $lang['form_label_clear_first'] = 'Najpierw usuń obecną';
 */
 //$lang['assets_instructions'] = 'Here you can upload new assets. Select overwrite if you would like to overwrite a file with the same name.';
 $lang['assets_instructions'] = 'Tutaj mozesz wczytać nowe zasoby. Wybierz \'zastąp\' jeśli chcesz zastąpić plik z tą samą nazwą.';
-$lang['form_label_preview/kb'] = 'Podgląd / rozmiar(bajty)';
+$lang['form_label_preview/kb'] = 'Podgląd/rozmiar (bajty)';
 $lang['form_label_link'] = 'Link';
 $lang['form_label_asset_folder'] = 'Katalog zasobów (assets)';
 $lang['form_label_new_file_name'] = 'Nowa nazwa pliku';
@@ -612,7 +614,7 @@ $lang['btn_duplicate'] = 'Duplikuj';
 $lang['btn_replace'] = 'Zamień';
 $lang['btn_ok'] = 'OK';
 $lang['btn_upload'] = 'Wczytaj';
-$lang['btn_download'] = 'Exportuj PHP';
+$lang['btn_download'] = 'Ściągnij';
 $lang['btn_export_data'] = 'Wyeksportuj dane';
 
 $lang['btn_no'] = 'Nie';
@@ -689,8 +691,9 @@ $lang['layout_field_main_copy'] = 'To jest głowny layout używany przez Twoją 
 $lang['layout_field_page_title'] = 'Tag &lt;title&gt; - Tytuł strony';
 $lang['layout_field_meta_description'] = 'Tag &lt;meta \'description\'&gt;';
 $lang['layout_field_meta_keywords'] = 'Tag &lt;meta \'keywords\'&gt;';
+$lang['layout_field_meta_robots'] = 'Tag &lt;meta \'robots\'&gt;';
 $lang['layout_field_body'] = 'Zmienna \'body\' strony';
-$lang['layout_field_heading'] = 'Nagłowek (opis?)';
+$lang['layout_field_heading'] = 'Nagłowek \'h1\'(head)';
 $lang['layout_field_body_description'] = 'Zawartość strony (typowo)';
 $lang['layout_field_body_class'] = 'Klasa tagu &lt;body&gt;';
 $lang['layout_field_redirect_to'] = 'Przekieruj do';
